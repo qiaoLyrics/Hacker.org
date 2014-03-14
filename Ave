@@ -1,0 +1,39 @@
+原文: this cipher is way, way harder than rot thirteen. here, you never know how far to shift! oh my the way, the answer is deadmanschest.
+
+用关键字"AVE"搜了很久都没什么收获，也看不出什么端倪，就到discuss去看看(http://www.hacker.org/forum/viewtopic.php?t=626&highlight=ave)
+然后看大家还是用很老土的办法"猜+替换"...囧...我还以为有什么技巧呢=_=
+某楼提示"ava"与"latin"有关系，我还以为真的有关系，但是到最后发现其实对于我们做这道题来说，没什么帮助，我还用google traslate(latin->english)来试..
+开始猜前面那几个单词是"this answer is..." 但是搞到最后又不对。。
+猜测句子里面应该有"ave"和"answer"字样，于是把长度为3和6的字母提取出来，再稍微删选一下，猜jwbfna->answer, cqrb->this。
+接下来就是老套路了。。猜的难度比之前做的题难。
+特别是最后这个单词mnjmvjwblqnbc，'V'死活猜不出，cracklib-small跪了换有道，有道跪了换google search才终于知道...*anschest是两个单词..."way"这些单词也是得借助cracklib-small才找出来的。
+答案是:deadmanschest
+
+/usr/share/dict/cracklib-small
+
+
+
+
+lryqna 
+fjh
+		axc 
+hxd
+qxf
+		oja
+		cqn
+		jwbfna
+
+
+j w b f N a R     C Q 
+a n s w e r i	  t h
+
+wag
+wax 
+way
+
+this cipher is way, way harder than rot thirteen. here, you never know how far to shift! oh my the way, the answer is deadVanschest.
+
+
+cqrb lryqna rb fjh, fjh qjamna cqjw axc cqracnnw. qnan, hxd wnena twxf qxf oja cx bqroc! xq kh cqn fjh, cqn jwbfna rb mnjmvjwblqnbc.
+
+g  j   l  p q       x z

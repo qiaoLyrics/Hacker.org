@@ -1,0 +1,19 @@
+替换加密
+
+
+a n s w e r				# 我猜有个单词是answer，然后发现整个句子里面只有一个单词是6个字母的
+I T A C Y W
+
+PWZEHVNWIEDZ			# 从/usr/share/dict/cracklib-small 里grep出长度12且第3位和第12位字母相同的单词，发现有几个，最有可能的是criptography
+cryptography
+						
+#然后接下来就是各种替换了
+
+#到后面知道adu*brate 是我们的答案。。。猜不出来*代表的字母。。拿到有道去“你要找的是不是。。。”你懂的
+
+
+
+
+all good hackers can solUe basic cryptography. when you find the solution to this teFt, you will be able to get the answer, which is aduGbrate.
+
+

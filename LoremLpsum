@@ -1,0 +1,10 @@
+
+文件里有个单词只出现过一次，要求输出这个单词。
+
+先在vim里吧逗号和句号变成空格，再
+cat lorem.txt| tr ' ' '\n' | awk '{list[$0]++;} \
+END {\
+  for (i in list ) {\
+         if (list[i] == 1) printf("%s\n", i);\
+	  } \
+  } '
