@@ -1,0 +1,12 @@
+考点：对http头的了解
+      如何获取http头
+
+curl -I http://www.hacker.org/challenge/misc/one.php 会发现有关键字answer
+
+在firefox的firebug获取到的头也有这个内容
+
+
+
+之前用wget/浏览器/迅雷下载one.php都没办法下载one.php，貌似下载开始的时候会执行one.php，所以下载下来的
+内容实际上是two.php。费解wget/迅雷下载的机理
+也就是说，我只能fetch到服务器POST给我的内容
