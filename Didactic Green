@@ -1,0 +1,10 @@
+获取图片里的像素值，但是因为有很多像素值，当然也可以手工用pixeltool提取。。但是。。这么多。。
+获取到像素值之后转ascii一下就出结果了。
+
+ImageMagick 据说是Linux上处理图片很强大的程序。
+man ImageMagick 会发现它下面有很多工具，我用了ImageMagick的stream工具(查找关键字pixel就定位到了这个
+工具上了，lucky~)
+
+stream green.png ans.txt
+
+ans.txt是个data文件，我也没多想，直接就用vim打开了，就发现了答案~

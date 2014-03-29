@@ -1,0 +1,4 @@
+
+考点：对网络编码的了解，escape()
+之前做过"Not Chess"这道题，对escape()有点了解，看数据挺像是escape()编码过的，
+所以就直接到W3C去unescape()了一下，结果就出来了 

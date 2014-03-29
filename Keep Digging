@@ -1,0 +1,40 @@
+跳舞的小人
+划出频率，找到'e'的小人。一般来说是要先找比较短的暗号，然后根据符合的单词一个一个试。
+拿旗子表示后面接一个空格。
+我刚开始试第二个单词‘ne’，因为NE = never的缩写。
+后来猜了一下，这个句子里面应该有个'answer'关键字，那就只能是倒数第三个单词了。这时才发现当时'ne'应该是'we'。
+后面就填充就好了。
+dict path : /usr/share/dict
+
+frequency of the letters of the alphabet in English :
+12,000	E	
+9,000	T	
+8,000	A, I, N, O, S	
+6,400	H	
+6,200	R	
+4,400	D	
+4,000	L	
+3,400	U	
+3,000	C, M	
+2,500	F
+2,000	W, Y
+1,700	G, P
+1,600	B
+1,200	V
+800	K
+500	Q
+400	J, X
+200	Z
+
+dancing man~ :
+
+a s
+w e
+_ a n _ e
+w e
+_ _ n _ 
+_ _ e
+_ _ _ w e _ 
+_ s
+w a _ s _ n
+

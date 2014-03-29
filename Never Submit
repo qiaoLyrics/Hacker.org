@@ -1,0 +1,7 @@
+考点：Submit不可按，用url提交
+
+
+查了一下源代码，Submit按钮不可按。
+反正我也不会改包什么的...
+
+直接改url提交 : http://www.hacker.org/challenge/chal.php?answer=spaghetti&id=25&go=Submit
