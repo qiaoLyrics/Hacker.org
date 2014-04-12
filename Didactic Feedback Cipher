@@ -1,0 +1,67 @@
+/*
+	简单算法逆向 
+
+
+	枚举k，逆向一下算法就可以了
+	为了方便，我是把加密串变成01串来搞的，因为不知道它的代码是不是按8位8位地来，所以弄成01串，以防不是按8位来搞地话
+	就可以方便修改。  不过作者还是比较良心的，是按8位来。
+
+
+	下方写了个题目的加密程序
+*/
+#include <stdio.h>
+#include <string>
+#include <iostream>
+using namespace std;
+
+string s = "0111010100011010011011110001110100111101010111000011001001000001001101100101001100100001000000010110110000000101011000100000101001111110010111100011010001000001001100100100011001100110000001000110000101000001001011100101101000101110010000010010110001001001001001010100101000100100" ;
+int len = s.length();
+
+int calc(string tmp)
+{
+	int val = 0;
+	for(int i = 0; i < 8; i++) {
+		if(tmp[i] == '0') val = val * 2;
+		else val = val * 2 + 1;
+	}
+	return val;
+}
+
+void func(int k)
+{
+	string txt = "";
+	for(int i = 0; i < len; i += 8) {
+		string tmp = s.substr(i, 8);
+		int c = calc(tmp);
+		txt = txt + (char)(k ^ c);	
+		k = c;
+	}
+	cout << txt << endl;
+}
+int main()
+{
+	for(int k = 1; k < 65534; k++) {
+		func(k);
+	}
+	return 0;
+}
+
+
+
+/*
+		#include <stdio.h>
+		#include <string>
+		using namespace std;
+		string s = "abcef";
+		int k = 10;
+		int main()
+		{
+			for (int i = 0; i < s.length(); i++) {
+				int c = s[i] ^ k;
+				printf("%2X ", (char)c);		//这里如果c只用1位的话要手工补0 ... =_=
+				k = c;
+			}
+			printf("\n");
+			return 0;
+		}
+*/

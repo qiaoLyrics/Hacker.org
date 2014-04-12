@@ -1,0 +1,23 @@
+替换加密  无趣
+
+
+用Ruby程序跑一下题目给的内容(input1)： print s.tr('^A-Z','') 出来结果 XBGRWICGDQICGRXBGDLRWG#
+
+从网上找来原文(input2)，
+
+
+$ cat input1 | tr " " "\n" > input3
+$ cat input2 | tr " " "\n" > input4
+$ diff -i input3 input4
+虽然得出些结果过如message such as homophones，但事实证明没用。
+
+
+接下来就从XBGRWICGDQICGRXBGDLRWG着手了。
+猜测是替换加密。随便猜测，‘g’出现了几次，是代表空格还是‘E’呢？
+会不会是原文有"homophones"字样呢？，在"homophones"里'h'出现了两次，尝试替换一下密文，未果。
+但是这个想法启发了我，继续猜测原文有“answer”字样...如果'g'代表'E'...如果是'the answer'都有...
+发现XBGRWICGD的两个'G'的距离刚好是'theanswer'里两个‘e’的距离，哈哈，直接替换。
+THEANSWERISWEATHERVANE
+...
+
+就这么乱搞出来了...
